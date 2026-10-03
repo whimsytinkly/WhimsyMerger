@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Whimsy Merger</title>
+    <title>Whimsy Demo</title>
 
     <link rel="stylesheet" href="base.css">
 
@@ -16,56 +16,73 @@
 
 <body>
 
+    <header class="app-header">
 
-    <!-- ================================ -->
-    <!-- Navigation -->
-    <!-- ================================ -->
+        <nav class="app-navigation">
+            <b>
+                Whimsy Merger
+            </b>
+        </nav>
 
-    
-<header class="app-header">
-
-    <nav class="app-navigation">
- <b>
-            Hello World
-        </b>
-        <a href="index.html">
-            <span class="app-navigation-icon">🏠</span>
-            <span class="app-navigation-label">Home</span>
-        </a>
-
-        <a href="demo.html">
-            <span class="app-navigation-icon">📦</span>
-            <span class="app-navigation-label">Demo</span>
-        </a>
-
-    </nav>
-
-</header>
+    </header>
 
 
 
     <!-- ================================ -->
-    <!-- Main -->
+    <!-- Main Container -->
     <!-- ================================ -->
 
     <main class="app-main app-main-with-header">
 
-        <b>
-            Hello World
-        </b>
+        <h1>
+            Whimsy Merger
+        </h1>
 
         <p>
-            Start building something with WhimsyWorkshop.
+            Throw the Files and get a single HTML!
         </p>
 
+        <!-- ================================ -->
+        <!-- Split Layout -->
+        <!-- ================================ -->
+        <div class="layout-30-70">
+
+            <section class="layout-default">
+                <!-- ================================ -->
+                <!-- Left Layout -->
+                <!-- ================================ -->
+                <input class="primary" type="file" id="file-picker" multiple>
+                <button class="button button-primary button-medium" id="merge-button">
+                    Merge
+                </button>
+
+            </section>
+            <section class="card-sub card-content">
+                <!-- ================================ -->
+                <!-- Right Layout -->
+                <!-- ================================ -->
+                <div class="card-content">
+                    <h5>Files to merge</h5>
+
+                    <ul id="merge-file-list"></ul>
+
+
+                    <h5>Ignored files</h5>
+
+                    <ul id="ignored-file-list"></ul>
+                </div>
+
+            </section>
+
+        </div>
     </main>
 
 
     <!-- ================================ -->
     <!-- Whimsy -->
     <!-- ================================ -->
-
     <script src="base.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

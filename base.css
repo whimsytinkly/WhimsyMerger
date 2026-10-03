@@ -70,30 +70,35 @@ body {
 }
 
 h1 {
+  margin: 0;
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-h1);
   line-height: var(--line-height-h1);
 }
 
 h2 {
+  margin: 0;
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-h2);
   line-height: var(--line-height-h2);
 }
 
 h3 {
+  margin: 0;
   font-size: var(--font-size-h3);
   font-weight: var(--font-weight-h3);
   line-height: var(--line-height-h3);
 }
 
 h4 {
+  margin: 0;
   font-size: var(--font-size-h4);
   font-weight: var(--font-weight-h4);
   line-height: var(--line-height-h4);
 }
 
 h5 {
+  margin: 0;
   font-size: var(--font-size-h5);
   font-weight: var(--font-weight-h5);
   line-height: var(--line-height-h5);
@@ -592,6 +597,7 @@ a {
 }
 
 .layout-default {
+  align-items: start;
   display: grid;
   grid-template-columns: 100%;
   column-gap: var(--space-md);
@@ -606,6 +612,7 @@ a {
 }
 
 .layout-50-50 {
+  align-items: start;
   display: grid;
   grid-template-columns: 50% 50%;
   column-gap: var(--space-md);
@@ -613,6 +620,7 @@ a {
 }
 
 .layout-70-30 {
+  align-items: start;
   display: grid;
   grid-template-columns: 70% 30%;
   column-gap: var(--space-md);
@@ -620,6 +628,7 @@ a {
 }
 
 .layout-30-70 {
+  align-items: start;
   display: grid;
   grid-template-columns: 30% 70%;
   column-gap: var(--space-md);
