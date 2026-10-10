@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Whimsy Demo</title>
+    <title>Whimsy Merger</title>
 
     <link rel="stylesheet" href="base.css">
 
@@ -51,17 +51,37 @@
                 <!-- ================================ -->
                 <!-- Left Layout -->
                 <!-- ================================ -->
-                <input class="primary" type="file" id="file-picker" multiple>
+                 Upload your files here:
+                <input class="primary" type="file" id="file-picker" accept=".html,.css,.js,.zip" multiple>
+                Or Choose a folder:
+                <input class="primary" type="file" id="folder-picker" webkitdirectory multiple>
                 <button class="button button-primary button-medium" id="merge-button">
                     Merge
                 </button>
 
             </section>
-            <section class="card-sub card-content">
+            <section class="layout-default card-main">
                 <!-- ================================ -->
                 <!-- Right Layout -->
                 <!-- ================================ -->
-                <div class="card-content">
+
+                <!-- ================================ -->
+                <!-- Conflicts Error -->
+                <!-- ================================ -->
+                <div class="notice-error card-content" id="conflict-error" style="display: none;">
+                    <h5>Potential JavaScript Conflicts</h5>
+                    <p>
+                        These global variables are declared in multiple files:
+                    </p>
+
+                    <ul id="conflict-file-list"></ul>
+
+                </div>
+
+                <!-- ================================ -->
+                <!-- File List -->
+                <!-- ================================ -->
+                <div class="card-sub card-content">
                     <h5>Files to merge</h5>
 
                     <ul id="merge-file-list"></ul>
@@ -81,6 +101,9 @@
     <!-- ================================ -->
     <!-- Whimsy -->
     <!-- ================================ -->
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/acorn@8/dist/acorn.js"></script>
+
     <script src="base.js"></script>
     <script src="script.js"></script>
 
