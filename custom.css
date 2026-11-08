@@ -1,0 +1,6 @@
+.upload-panel {
+    display: grid;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    align-content: start;
+}
